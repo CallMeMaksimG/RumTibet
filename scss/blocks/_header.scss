@@ -1,0 +1,40 @@
+.header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9;
+}
+
+.header__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    z-index: 9999;
+}
+
+.header__logo {
+    margin-right: 200px;
+}
+
+.nav__list {
+    display: flex;
+    gap: 24px;
+
+    a {
+        font-size: 18px;
+        font-weight: 600;
+        transition: color 0.2s ease-in;
+    }
+
+    a:hover {
+        color: $yellow;
+    }
+}
+
+.header__consultation {
+    padding: 12px 24px;
+    height: 44px;
+    margin-left: auto;
+}
