@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Румтибет</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <link rel="stylesheet" href="css/main.css">
+    
 </head>
 <body>
     <header class="header">
@@ -50,11 +52,34 @@
                             <span class="dropdown__span">выберите из списка</span>
                             <input type="text" name="select-location" value="" class="dropdown__input-hidden">
                         </div>
+                        <div class="date">
+                            <button class="date__btn">
+                                <input name="datefilter" type="text" class="date__input" value="Дата похода">
+                            </button>
+                            
+                            <span class="dropdown__span">укажите диапазон</span>
+                            <input type="text" name="select-location" value="" class="dropdown__input-hidden">
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropdown__btn">Участики</button>
+                            <ul class="dropdown__list">
+                                <li class="dropdown__list-item desibled" data-value="practicants">Участники</li>
+                                <li class="dropdown__list-item" data-value="4">4</li>
+                                <li class="dropdown__list-item" data-value="5">5</li>
+                                <li class="dropdown__list-item" data-value="6">6</li>
+                            </ul>
+                            <span class="dropdown__span">минимум 4 человека</span>
+                            <input type="text" name="select-location" value="" class="dropdown__input-hidden">
+                        </div>
+                        <button class="search-form__btn">Найти программу</button>
                     </div>
             </div>
             
         </section>
     </main>
-<script src="js/index.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
