@@ -42,9 +42,13 @@
     top: 80%;
     background: rgba(255, 255, 255, 0.20);
     backdrop-filter: blur(3px);
-    // border-radius: 32px;
     color: $white;
     padding: 30px 32px 20px 30px;
+    transition: all 0.8s ease-in;
+
+    &--open {
+        top: 0%;
+    }
 }
 
 .overlay__title {

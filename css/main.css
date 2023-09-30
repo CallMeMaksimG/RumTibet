@@ -619,6 +619,11 @@ a {
           backdrop-filter: blur(3px);
   color: #FDFDFD;
   padding: 30px 32px 20px 30px;
+  -webkit-transition: all 0.8s ease-in;
+  transition: all 0.8s ease-in;
+}
+.overlay--open {
+  top: 0%;
 }
 
 .overlay__title {

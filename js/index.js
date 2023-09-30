@@ -46,7 +46,6 @@ document.querySelectorAll('.dropdown').forEach((dropDownWrapper)=> {
 
 });
 
-// document.querySelector('.date__btn').addEventListener('click', )
 
 $(function() {
 
@@ -69,3 +68,12 @@ $(function() {
   });
 
 
+const popularCards = document.querySelectorAll('.popular__card-item');
+popularCards.forEach((card) => {
+    card.addEventListener('mouseover', function() {
+            this.querySelector('.overlay').classList.add('overlay--open');
+    })
+    card.addEventListener('mouseout', function() {
+        this.querySelector('.overlay').classList.remove('overlay--open');
+    })  
+})
