@@ -77,3 +77,14 @@ popularCards.forEach((card) => {
         this.querySelector('.overlay').classList.remove('overlay--open');
     })  
 })
+
+const galleryImages = document.querySelectorAll('.gallery__media-img');
+
+galleryImages.forEach((image) => {
+    image.addEventListener('mouseover', function() {
+        this.querySelector('.gallery__zoom-icon').classList.add('gallery__zoom-icon--show');
+    })
+    image.addEventListener('mouseout', function() {
+        this.querySelector('.gallery__zoom-icon').classList.remove('gallery__zoom-icon--show');
+    })
+})
