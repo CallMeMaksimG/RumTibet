@@ -88,3 +88,20 @@ galleryImages.forEach((image) => {
         this.querySelector('.gallery__zoom-icon').classList.remove('gallery__zoom-icon--show');
     })
 })
+const modal = document.querySelector('.modal');
+const modalImg = document.querySelector('.modal__img');
+galleryImages.forEach((image) => {
+    image.addEventListener('click', function(){
+        console.log(this.querySelector('img').src);
+        console.log(this)
+        console.log('click')
+        
+        modal.classList.add('modal--open');
+        modalImg.src = this.querySelector('img').src;
+    })
+})
+const closeModal = document.querySelector('.modal__close');
+closeModal.addEventListener('click', function(){
+    modal.classList.remove('modal--open');
+})
+
