@@ -84,6 +84,7 @@ galleryImages.forEach((img) => {
     imageSrcs.push(img.children[0].src);
 })
 
+
 const modalOtherImage = document.querySelector('.modal__other-img');
 
 function renderImageModal () {

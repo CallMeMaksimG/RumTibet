@@ -822,6 +822,7 @@ a {
 .gallery {
   text-align: center;
   position: relative;
+  padding-bottom: 100px;
 }
 
 .gallery__subtitle {
@@ -921,7 +922,6 @@ a {
   font-weight: 600;
   line-height: 20px; /* 125% */
   letter-spacing: 0.192px;
-  margin-bottom: 198px;
 }
 
 .news-subscribe__wrapper {
@@ -934,7 +934,8 @@ a {
           box-shadow: 0px 0px 15px 0px rgba(24, 18, 30, 0.12);
   padding: 40px 100px;
   position: relative;
-  top: -98px;
+  margin-bottom: -96px;
+  background: #FDFDFD;
 }
 
 .news-subscribe__subtitle {
@@ -1086,4 +1087,106 @@ a {
 .modal__other-img img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.footer__top {
+  background: #1A3E3E;
+  padding-top: 178px;
+  color: #FDFDFD;
+}
+
+.footer__top-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer__info {
+  width: 456px;
+  margin-right: 44px;
+}
+
+.footer__title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  padding-bottom: 17px;
+}
+
+.footer__info-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  padding-bottom: 80px;
+}
+
+.footer__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+  padding-bottom: 32px;
+}
+.footer__contacts a {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  text-decoration-line: underline;
+  -webkit-transition: color 0.2s ease-in;
+  transition: color 0.2s ease-in;
+}
+.footer__contacts a:hover {
+  color: #F2BE22;
+}
+
+.footer__social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+  padding-bottom: 80px;
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+.footer__list a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  position: relative;
+  padding-left: 18px;
+}
+.footer__list a:hover {
+  color: #F2BE22;
+  text-decoration: underline;
+}
+.footer__list a::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background: url(../img/footer/list.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.footer__list a::before:hover {
+  fill: #F2BE22;
+}
+
+.footer__important {
+  width: 280px;
+  margin-left: auto;
 }
