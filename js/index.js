@@ -79,6 +79,22 @@ popularCards.forEach((card) => {
 })
 
 const galleryImages = document.querySelectorAll('.gallery__media-img');
+let imageSrcs = [];
+galleryImages.forEach((img) => {
+    imageSrcs.push(img.children[0].src);
+})
+
+const modalOtherImage = document.querySelector('.modal__other-img');
+
+function renderImageModal () {
+    imageSrcs.forEach((src) => {
+        const img = document.createElement('img');
+        img.className = 'modal__mini-img';
+        img.src = src;
+        modalOtherImage.append(img);
+    })
+}
+renderImageModal();
 
 galleryImages.forEach((image) => {
     image.addEventListener('mouseover', function() {
@@ -91,11 +107,7 @@ galleryImages.forEach((image) => {
 const modal = document.querySelector('.modal');
 const modalImg = document.querySelector('.modal__img');
 galleryImages.forEach((image) => {
-    image.addEventListener('click', function(){
-        console.log(this.querySelector('img').src);
-        console.log(this)
-        console.log('click')
-        
+    image.addEventListener('click', function(){ 
         modal.classList.add('modal--open');
         modalImg.src = this.querySelector('img').src;
     })
@@ -105,3 +117,10 @@ closeModal.addEventListener('click', function(){
     modal.classList.remove('modal--open');
 })
 
+const miniModalImg = document.querySelectorAll('.modal__mini-img')
+
+miniModalImg.forEach((img) => {
+    img.addEventListener('click', function(){
+        modalImg.src = img.src;
+    })
+})
