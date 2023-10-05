@@ -1190,3 +1190,34 @@ a {
   width: 280px;
   margin-left: auto;
 }
+
+.footer__bottom {
+  padding: 24px;
+  background: #18121E;
+}
+
+.footer__bottom-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__bottom-wrapper p {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #FDFDFD;
+}
+.footer__bottom-wrapper a {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  text-decoration-line: underline;
+  -webkit-transition: color 0.2s ease-in;
+  transition: color 0.2s ease-in;
+}
+.footer__bottom-wrapper a:hover {
+  color: #F2BE22;
+}

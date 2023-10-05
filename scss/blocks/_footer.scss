@@ -89,3 +89,32 @@
     width: 280px;
     margin-left: auto;
 }
+
+.footer__bottom {
+    padding: 24px;
+    background: $dark;
+}
+
+.footer__bottom-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 18px; 
+        color: $white;
+    }
+
+    a {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 18px;
+        text-decoration-line: underline;
+        transition: color 0.2s ease-in;
+
+        &:hover {
+            color: $yellow;
+        }
+    }
+}
