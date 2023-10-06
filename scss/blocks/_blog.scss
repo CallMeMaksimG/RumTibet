@@ -18,11 +18,14 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 24px 20px;
     padding-bottom: 50px;
+
+    @media(max-width: $tablet) {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
 }
 
 .blog__media-item {
-    width: 580px;
-    height: 312px;
     display: flex;
     padding: 16px;
     gap: 24px;

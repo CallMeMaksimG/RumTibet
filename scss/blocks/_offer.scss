@@ -3,15 +3,20 @@
 }
 
 .offer__wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: start;
+    display: flex;
+    align-items: center;
     gap: 90px;
     padding: 80px 0 100px;
+    @media(max-width: $tablet) {
+        gap: 45px;
+    }
 }
 
 .offer__content {
-
+    max-width: 580px;
+    @media(max-width: $tablet) {
+        flex: 3;
+    }
 }
 
 .offer__subtitle {
@@ -94,8 +99,13 @@
 
 .offer__img {
     display: grid;
+    
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-    max-width: 510px;
-    margin-top: 40px;
+
+    @media(max-width: $tablet) {
+        grid-template-columns: 150px;
+        justify-content: center;
+        flex: 1;
+    }
 }
