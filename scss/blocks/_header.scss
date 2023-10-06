@@ -22,14 +22,68 @@
     display: flex;
     gap: 24px;
 
+    li:nth-child(1) {
+        @media(max-width: $tablet) {
+            display: none;
+        }
+    }
+
+
     a {
         font-size: 18px;
         font-weight: 600;
         transition: color 0.2s ease-in;
+
+
+        @media(max-width: $tablet) {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+            position: relative;
+            padding-left: 18px;
+ 
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 4px;
+                left: 0;
+                height: 10px;
+                width: 10px;
+                background: url(../img/header/arrow.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+           
+        }
+
+       
+
     }
 
     a:hover {
         color: $yellow;
+    }
+
+    @media(max-width: $tablet) {
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        left: -100%;
+        background: $green;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        padding: 50px 16px;
+        gap: 16px;
+        transition: all .2s ease-in;
+
+        
+
+        &--active {
+            left: 0;
+        }
     }
 }
 
@@ -37,4 +91,8 @@
     padding: 12px 24px;
     height: 44px;
     margin-left: auto;
+
+    @media(max-width: $tablet) {
+        display: none;
+    }
 }

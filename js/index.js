@@ -125,3 +125,13 @@ miniModalImg.forEach((img) => {
         modalImg.src = img.src;
     })
 })
+
+
+const burgerBtn = document.querySelector('.nav-icon-btn');
+const burgerIcon = burgerBtn.querySelector('.nav-icon');
+const mobileMenu = document.querySelector('.nav__list');
+
+burgerBtn.addEventListener('click', function() {
+    burgerIcon.classList.toggle('nav-icon--active');
+    mobileMenu.classList.toggle('nav__list--active');
+})
