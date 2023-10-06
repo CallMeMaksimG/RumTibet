@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Румтибет</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="libs/youtubeLightbox/youtubeLightbox.css">
     <link rel="stylesheet" href="css/main.css">
 
 </head>
@@ -84,7 +85,7 @@
                         <div class="about__img"><img src="img/about/about-img.jpg" alt=""></div>
                         <div class="about__video">
                             <img src="img/about/about-video.jpg" alt="">
-                            <a href="#" class="about__video-link">
+                            <a href="https://www.youtube.com/watch?v=_Z5coMfFloc" class="about__video-link" data-youtubeLightbox>
                                 <img src="img/about/play.svg" alt="play">
                             </a>
                         </div>
@@ -424,9 +425,18 @@
             </div>
         </div>
     </footer>
+     <!-- YouTube LightBox -->
+     <div id="youtubelightbox" class="youtubelightbox">
+        <div class="youtubelightbox__centeredchild">
+            <div class="youtubelightbox__videowrapper">
+                <div id="youtubelightboxPlayer"></div>
+            </div>
+        </div>
+    </div>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="libs/youtubeLightbox/youtubeLightbox.js"></script>
     <script src="js/index.js"></script>
 </body>
 
