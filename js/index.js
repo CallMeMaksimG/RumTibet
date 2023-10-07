@@ -70,12 +70,14 @@ $(function() {
 
 const popularCards = document.querySelectorAll('.popular__card-item');
 popularCards.forEach((card) => {
-    card.addEventListener('mouseover', function() {
-            this.querySelector('.overlay').classList.add('overlay--open');
-    })
-    card.addEventListener('mouseout', function() {
-        this.querySelector('.overlay').classList.remove('overlay--open');
-    })  
+    if(window.innerWidth > 950) {
+        card.addEventListener('mouseover', function() {
+                this.querySelector('.overlay').classList.add('overlay--open');
+            })
+        card.addEventListener('mouseout', function() {
+            this.querySelector('.overlay').classList.remove('overlay--open');
+        })  
+    }
 })
 
 const galleryImages = document.querySelectorAll('.gallery__media-img');
