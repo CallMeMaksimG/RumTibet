@@ -9,6 +9,11 @@
     @media(max-width: $tablet) {
         flex-wrap: wrap;
     }
+
+    @media(max-width: $mobile) {
+        background: none;
+        padding: 32px 0;
+    }
 }
 
 .search-program {
@@ -27,6 +32,10 @@
 
     @media(max-width: $tablet) {
         flex: 1 1 48%;
+    }
+
+    @media(max-width: $mobile) {
+        display: none;
     }
 }
 
@@ -51,6 +60,11 @@
 
     @media(max-width: $tablet) {
         padding-top: 300px;
+    }
+
+    @media(max-width: $mobile) {
+        font-size: 28px;
+        padding-top: 234px;
     }
 }
 

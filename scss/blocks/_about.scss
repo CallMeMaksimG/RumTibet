@@ -10,6 +10,10 @@
         padding: 75px 0;
         gap: 40px;
     }
+
+    @media(max-width: $mobile) {
+        padding: 50px 0;
+    }
 }
 
 .about__media {
@@ -28,11 +32,26 @@
     font-weight: 400;
     line-height: 150%;
     margin: 40px 0 40px;
+
+    @media(max-width: $mobile) {
+        font-size: 16px;
+        margin: 24px 0 24px 0;
+    }
+}
+
+.about__img {
+    @media(max-width: $mobile) {
+        display: none;
+    }
 }
 
 .about__video {
     position: relative;
     margin: -274px 0 0 130px;
+
+    @media(max-width: $mobile) {
+       margin: 0;
+    }
    
     img {
         border-radius: 24px;
@@ -45,6 +64,10 @@
     align-items: center;
     width: 200px;
     height: 52px;
+
+    @media(max-width: $mobile) {
+        margin: 0 auto;
+    }
 }
 
 .about__video-link {

@@ -16,6 +16,12 @@
         flex-direction: column;
         gap: 30px;
     }
+
+    @media(max-width: $mobile) {
+        padding: 24px;
+        margin-bottom: 50px;
+    }
+    
     
 }
 
@@ -38,6 +44,11 @@
     @media(max-width: $tablet) {
         text-align: center;
     }
+
+    @media(max-width: $mobile) {
+        font-size: 18px;
+    }
+    
 }
 
 .news-subscribe__text {
@@ -51,12 +62,18 @@
     gap: 16px;
     margin-top: 8px;
     margin-bottom: 8px;
+
+    @media(max-width: $mobile) {
+        flex-direction: column;
+        gap: 16px;
+    }
+    
 }
 
 .news-subscribe__input {
     padding: 0 16px;
     width: 280px;
-    height: 44px;
+    min-height: 44px;
     border-radius: 4px;
     background: $grey;
     font-size: 14px;
@@ -71,7 +88,7 @@
 
 .news-subscribe__btn {
     width: 240px;
-    height: 44px;
+    min-height: 44px;
     padding: 0 16px;
     display: flex;
     align-items: center;
