@@ -8,3 +8,5 @@
 - БЭМ;
 - JS;
 - Адаптив под мобильные устройства.
+
+[OPEN](https://callmemaksimg.github.io/RumTibet)
